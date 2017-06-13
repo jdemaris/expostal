@@ -16,6 +16,7 @@ install:
   - mkdir _deps
   - git clone https://github.com/openvenues/libpostal
   - cd libpostal
+  - git checkout 0cb8c61fb0619a47ab19ab97e847bea8af3a7e44
   - ./bootstrap.sh
   - ./configure --datadir=$(pwd)/data --prefix=$(realpath $(pwd)/../_deps) --bindir=$(realpath $(pwd)/../_deps)
   - make install
